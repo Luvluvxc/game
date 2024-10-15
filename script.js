@@ -327,5 +327,5 @@ function continuar() {
 function mostrarPuntajeFinal() {
   document.getElementById('decisiones').style.display = 'none';
   document.getElementById('final').style.display = 'block';
-  document.getElementById('puntaje-final').innerText = `Tu puntaje final es: ${puntaje}/100`;
+  document.getElementById('puntaje-final').innerText = `Tu puntaje es: ${puntaje}/100`;
 }
