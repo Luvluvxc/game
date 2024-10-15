@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(141,208,209);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 34%, rgba(7,33,33,1) 65%, rgba(0,0,0,1) 100%);
+  font-family: "Pixelify Sans", sans-serif; /* Fuente estilo videojuego */
+  color: white;
+
+}
+
+.container {
+  text-align: center;
+  margin-top: 0;
+  width: 100%;
+  
+}
+
+h1, h2 {
+  color: #00ffcc; /* Color verde neón tipo videojuego */
+  font-family: "Silkscreen", sans-serif;
+}
+
+h3{
+  font-family: "Archivo Black", sans-serif;
+}
+
+.menu-item, .decision-opcion {
+  background-color: #333333; /* Botones oscuros */
+  color: #00ffcc; /* Texto verde neón */
+  padding: 20px;
+  margin: 15px auto;
+  width: 300px;
+  border-radius: 4px; /* Eliminar bordes redondeados para estilo más "retro" */
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.8); /* Sombra neón */
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.menu-item:hover, .decision-opcion:hover {
+  background-color: #00ffcc; /* Efecto hover brillante */
+  color: #ffffff;
+}
+
+#decisiones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .decision-opcion {
+    width: 80%;
+  }
+}
+
+#final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Ocultar modal por defecto */
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro */
+  z-index: 1000; 
+  font-size: 12px; 
+}
+
+.modal-content {
+  background-color: #1a1a1a; /* Fondo oscuro del modal */
+  color: #5ddbca; /* Texto en verde neón */
+  padding: 30px;
+  border: 1px solid #00ffcc; /* Borde verde neón */
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 1001;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.8); /* Sombra neón */
+  text-transform: uppercase;
+}
+
+.close {
+  color: #00ffcc;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: -10px;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #ff6666; /* Efecto hover rojo */
+  text-decoration: none;
+}
+
+/* Ajustar tamaño para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+  }
+}
+
+button {
+  background-color: #00ffcc; /* Fondo verde neón */
+  color: #333333; /* Texto oscuro */
+  border: none;
+  padding: 15px 30px;
+  font-family: 'Silkscreen', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.8); /* Sombra neón */
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #333333; /* Cambio de fondo al pasar el cursor */
+  color: #00ffcc; /* Texto verde neón */
+}
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Decisiones</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+ <!-- Menú Principal -->
+ <div id="menu" class="container">
+  <h1>Elige un Área</h1>
+  <div class="menu-item" onclick="seleccionarArea('ventas')">Ventas</div>
+  <div class="menu-item" onclick="seleccionarArea('gerencia')">Gerencia General</div>
+  <div class="menu-item" onclick="seleccionarArea('produccion')">Producción</div>
+  <div class="menu-item" onclick="seleccionarArea('compras')">Compras</div>
+</div>
+
+<!-- Decisiones -->
+<div id="decisiones" class="container" style="display: none;">
+  <h2 id="titulo-area">Área</h2>
+  <p id="decision-texto">Texto de la decisión aquí</p>
+  <div class="decision-opcion" id="opcionA" onclick="tomarDecision('opcionA')">Opción A</div>
+  <div class="decision-opcion" id="opcionB" onclick="tomarDecision('opcionB')">Opción B</div>
+</div>
+
+<!-- Modal para mostrar resultados -->
+<div id="modal" class="modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <h3 id="resultado-titulo">Resultado</h3>
+    <p id="resultado-puntos">Puntaje actual: 0</p>
+    <button onclick="continuar()">Continuar</button>
+  </div>
+</div>
+
+<!-- Pantalla de Puntaje Final en una card -->
+<div id="final" class="e-card" style="display: none;">
+  <div class="infotop">
+    <h2>Puntaje Final</h2>
+    <p id="puntaje-final">Tu puntaje final es: 0/100</p>
+  </div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
