@@ -17,33 +17,33 @@ let decisiones = {
       }
     },
     {
-      texto: "Para incentivar las ventas, consideras promociones.",
+      texto: "Para incentivar las ventas, te enfrentas a la decisión sobre promociones. Tu equipo de marketing sugiere estrategias agresivas.",
       opcionA: {
         texto: "Ofrecer un 50% de descuento",
-        impacto: 20,
+        impacto: 10,
         explicacion: "Atrae rápidamente a muchos clientes, pero reduce ingresos y puede dañar la marca."
       },
       opcionB: {
         texto: "Promoción 2x1",
-        impacto: 10,
-        explicacion: "Atrae clientes sin sacrificar tanto el margen, pero el efecto puede ser menor que un descuento fuerte."
+        impacto: 20,
+        explicacion: "Atrae clientes sin sacrificar tanto el margen, pero recuerda controlar el tiempo de la promoción"
       }
     },
     {
-      texto: "Decides revisar tus Canales de Distribución.",
+      texto: "Observando el mercado, decides revisar tus Canales de Distribución. La competencia está aprovechando nuevas plataformas online.",
       opcionA: {
         texto: "Expandir a nuevos canales online",
-        impacto: 20,
+        impacto: 10,
         explicacion: "Aumenta ventas y alcance, pero conlleva altos costos y riesgos logísticos."
       },
       opcionB: {
         texto: "Mejorar canales actuales",
-        impacto: 10,
-        explicacion: "Más seguro y económico, pero limita el crecimiento si el mercado está saturado."
+        impacto: 20,
+        explicacion: "Más seguro y económico, aunque puede limitar el crecimiento si el mercado está saturado."
       }
     },
     {
-      texto: "Consideras la expansión de mercado.",
+      texto: "Tu empresa está considerando su expansión en el mercado. La situación actual requiere una evaluación cuidadosa sobre el rumbo a seguir.",
       opcionA: {
         texto: "Expandirse a mercados internacionales",
         impacto: 20,
@@ -56,7 +56,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Necesitas ajustar los precios para seguir siendo competitivo.",
+      texto: "Como parte de tu estrategia comercial, te enfrentas a la necesidad de ajustar los precios para seguir siendo competitivo.",
       opcionA: {
         texto: "Reducir precios para competir",
         impacto: 20,
@@ -72,7 +72,7 @@ let decisiones = {
   
   gerencia: [
     {
-      texto: "Tu empresa necesita decidir sobre la contratación de personal.",
+      texto: "Tu empresa está en un punto de inflexión y necesitas decidir sobre la contratación de personal. Esto impactará en la productividad y los costos operativos.",
       opcionA: {
         texto: "Contratar personal especializado",
         impacto: 20,
@@ -85,7 +85,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Debes decidir sobre inversión en tecnología.",
+      texto: "La eficiencia operativa es fundamental, y necesitas decidir sobre la inversión en tecnología para mejorar la gestión y productividad.",
       opcionA: {
         texto: "Invertir en software de gestión avanzado",
         impacto: 20,
@@ -98,20 +98,20 @@ let decisiones = {
       }
     },
     {
-      texto: "Te enfrentas a la decisión sobre el estilo de liderazgo.",
+      texto: "En un entorno laboral cambiante, te enfrentas a la decisión sobre la estrategia de liderazgo para guiar a tu equipo.",
       opcionA: {
         texto: "Estilo de liderazgo autoritario",
-        impacto: 10,
-        explicacion: "Permite decisiones rápidas, pero puede desmotivar al personal."
+        impacto: 20,
+        explicacion: "Permite decisiones rápidas."
       },
       opcionB: {
         texto: "Estilo de liderazgo participativo",
-        impacto: 20,
-        explicacion: "Mejora moral y creatividad, pero puede ralentizar decisiones."
+        impacto: 10,
+        explicacion: "Mejora moral y creatividad pero ralentiza decisiones."
       }
     },
     {
-      texto: "Necesitas decidir sobre la política de sostenibilidad.",
+      texto: "Con la creciente preocupación por la sostenibilidad, necesitas decidir sobre la política que implementará tu empresa.",
       opcionA: {
         texto: "Implementar una política de sostenibilidad agresiva",
         impacto: 20,
@@ -124,7 +124,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Decides entre centralizar o descentralizar la toma de decisiones.",
+      texto: "Tu empresa está evaluando su estructura organizativa y necesita decidir entre centralizar o descentralizar la toma de decisiones.",
       opcionA: {
         texto: "Centralizar la toma de decisiones",
         impacto: 20,
@@ -140,11 +140,11 @@ let decisiones = {
   
   produccion: [
     {
-      texto: "Necesitas mejorar la eficiencia en la producción.",
+      texto: "Tu empresa está buscando mejorar la eficiencia en la producción y necesita decidir sobre la mejora de procesos.",
       opcionA: {
         texto: "Implementar automatización",
         impacto: 20,
-        explicacion: "Aumenta eficiencia, pero puede ser costosa y llevar tiempo."
+        explicacion: "Aumenta eficiencia, bien!."
       },
       opcionB: {
         texto: "Mejorar procesos manuales",
@@ -153,7 +153,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Decides sobre los niveles de inventario.",
+      texto: "La gestión de inventarios es crucial para tu operación. Te enfrentas a la decisión sobre los niveles de inventario.",
       opcionA: {
         texto: "Mantener altos niveles de inventario",
         impacto: 20,
@@ -166,7 +166,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Evalúas la expansión de capacidad de producción.",
+      texto: "Estás evaluando la expansión de capacidad de producción, y debes decidir sobre la mejor forma de hacerlo.",
       opcionA: {
         texto: "Abrir una nueva planta",
         impacto: 20,
@@ -179,20 +179,20 @@ let decisiones = {
       }
     },
     {
-      texto: "Debes decidir sobre el uso de materiales.",
+      texto: "Tienes que decidir sobre el uso de materiales en tu proceso de producción, lo que impactará la calidad y los costos.",
       opcionA: {
         texto: "Usar materiales más baratos",
-        impacto: 20,
-        explicacion: "Reduce costos, pero puede afectar calidad."
+        impacto: 10,
+        explicacion: "Reduce costos, pero afecta la calidad."
       },
       opcionB: {
         texto: "Usar materiales premium",
-        impacto: 10,
-        explicacion: "Mejora calidad, pero aumenta costos de producción."
+        impacto: 20,
+        explicacion: "Mejora calidad, aunque aumenta costos de producción."
       }
     },
     {
-      texto: "Decides sobre el ritmo de producción.",
+      texto: "Debes decidir sobre el ritmo de producción, ya que esto impactará tu capacidad de respuesta al mercado.",
       opcionA: {
         texto: "Aumentar el ritmo de producción",
         impacto: 20,
@@ -209,7 +209,7 @@ let decisiones = {
   
   compras: [
     {
-      texto: "Evalúas proveedores para asegurar suministro de materiales.",
+      texto: "Tu departamento de compras está evaluando proveedores para asegurar el suministro de materiales. Debes tomar una decisión estratégica.",
       opcionA: {
         texto: "Elegir al proveedor más barato",
         impacto: 10,
@@ -222,7 +222,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Consideras el volumen de compra.",
+      texto: "Estás considerando el volumen de compra. Esto impactará tus costos y tu capital de trabajo.",
       opcionA: {
         texto: "Comprar en grandes cantidades",
         impacto: 20,
@@ -261,7 +261,7 @@ let decisiones = {
       }
     },
     {
-      texto: "Consideras la diversificación de proveedores.",
+      texto: "La diversificación de proveedores es un tema importante para tu estrategia de compras. Debes decidir cómo proceder.",
       opcionA: {
         texto: "Trabajar con un único proveedor",
         impacto: 20,
